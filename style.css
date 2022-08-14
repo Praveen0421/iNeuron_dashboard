@@ -1,0 +1,2022 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+/* Navagition */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 135px;
+  background-color: #fff;
+}
+.nav01 {
+  position: relative;
+  bottom: 18px;
+}
+.nav01,
+.logo,
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo p {
+  position: relative;
+  left: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  color: #333;
+}
+.space-n {
+  position: relative;
+  left: 48px;
+  color: #333;
+}
+.O {
+  position: relative;
+  top: 2px;
+  right: 15.7px;
+  z-index: 2;
+  height: 64px;
+}
+.circle1 {
+  position: relative;
+  z-index: 1;
+  right: 101.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  width: 46px;
+  background-color: #7877da;
+  border-radius: 50%;
+  animation: changeColor 20s infinite;
+}
+@keyframes changeColor {
+  10% {
+    background-color: #de5656;
+  }
+  40% {
+    background-color: #60d972;
+  }
+  80% {
+    background-color: rgb(236, 126, 24);
+  }
+}
+.circle2 {
+  height: 35px;
+  width: 35px;
+  background-color: #333;
+  border-radius: 50%;
+}
+.eyes {
+  position: relative;
+  z-index: 3;
+  right: 149px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 18px;
+  width: 50px;
+}
+.eye01,
+.eye02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  width: 15px;
+  background-color: #2c2b2b;
+  border: 0.5px solid black;
+  border-radius: 50%;
+}
+.eye01 {
+  position: relative;
+  left: 3px;
+  bottom: 2px;
+}
+.eye02 {
+  position: relative;
+  right: 3px;
+  bottom: 2px;
+}
+.len {
+  height: 7px;
+  width: 7px;
+  border-radius: 50px;
+  color: black;
+  border: 0.5px solid #fff;
+  animation: left-right 5s infinite;
+}
+@keyframes left-right {
+  10% {
+    transform: translate(2px, 0px);
+  }
+  40% {
+    transform: translate(0px, 0px);
+  }
+  80% {
+    transform: translate(-2px, 0px);
+  }
+}
+/* Search-box */
+
+.search-box {
+  position: relative;
+  right: 70px;
+  width: 800px;
+  height: 45px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+.search-icon {
+  position: relative;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box input {
+  position: relative;
+  right: 18px;
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 500;
+  width: 700px;
+  border: none;
+  outline: none;
+  color: #333;
+  background-color: #fff;
+}
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #333;
+}
+
+/* nav-btns */
+.nav-btn {
+  position: relative;
+  right: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Poppins;
+  padding: 6px 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 0px 5px;
+}
+.singUp {
+  color: #5e5e5e;
+  background-color: #fff;
+  transition-duration: 1s;
+  border: 2px solid #5e5e5e;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+}
+.singUp:hover {
+  color: #fff;
+  background-color: #5e5e5e;
+  transition-duration: 1s;
+  border: 2px solid #5e5e5e;
+}
+.singIn {
+  color: #fff;
+  border: 2px solid #5e5e5e;
+  background-color: #5e5e5e;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+}
+.singIn:hover {
+  color: #5e5e5e;
+  background-color: #fff;
+  transition-duration: 1s;
+  border: 2px solid #5e5e5e;
+}
+/* -++----------------**************** */
+.nav02 {
+  display: flex;
+  align-items: center;
+}
+
+.nav02 ul {
+  display: flex;
+}
+li {
+  position: relative;
+  list-style-type: none;
+  margin: 0px 30px;
+  font-size: 16px;
+  font-family: Poppins;
+  color: #333;
+}
+select {
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  font-family: Poppins;
+  border: none;
+  outline: none;
+  color: #333;
+}
+#nav-course {
+  position: relative;
+  right: 25px;
+}
+#nav-company {
+  position: relative;
+  left: 25px;
+}
+
+/* industry */
+.industry-section {
+  overflow: hidden;
+  display: flex;
+  height: 715px;
+  background-color: #d76363;
+}
+.industry-text {
+  position: absolute;
+  top: 290px;
+  left: 112px;
+  font-family: Poppins;
+}
+.industry-text h2 {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f4f4f4;
+}
+.industry-text h1 {
+  position: relative;
+  top: 30px;
+  line-height: 1.1em;
+  font-size: 36px;
+  font-weight: 700;
+  color: #f9d1d1;
+}
+.industry-text p {
+  position: relative;
+  top: 60px;
+  line-height: 1.5em;
+  font-weight: 500;
+  color: #fff;
+}
+.industry-member {
+  height: 580px;
+  width: 100%;
+}
+.industry-member img {
+  float: right;
+  height: 550px;
+}
+
+.shape01,
+.shape02,
+.shape03,
+.shape04,
+.shape05,
+.shape06,
+.shape07,
+.shape08,
+.shape09,
+.shape10,
+.shape11,
+.shape12,
+.shape13 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: -120px;
+  border-radius: 50px;
+  border: 1px solid #fcfcfc;
+}
+.shape01 {
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  animation: top-down1 11s infinite;
+}
+@keyframes top-down1 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-500px);
+  }
+}
+.shape02 {
+  position: absolute;
+  left: 140px;
+  transition: all 0.5s ease-in-out;
+  animation: top-down2 11.5s infinite;
+}
+@keyframes top-down2 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-450px);
+  }
+}
+.shape03 {
+  position: absolute;
+  left: 280px;
+  transition: all 0.5s ease-in-out;
+  animation: top-down3 12s infinite;
+}
+@keyframes top-down3 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-350px);
+  }
+}
+.shape04 {
+  position: absolute;
+  left: 420px;
+  transition: all 0.5s ease-in-out;
+  animation: top-down4 12.5s infinite;
+}
+@keyframes top-down4 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-400px);
+  }
+}
+
+.shape05 {
+  position: absolute;
+  left: 560px;
+  transition: all 0.5s ease-in-out;
+  animation: top-down2 13s infinite;
+}
+@keyframes top-down5 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-300px);
+  }
+}
+.shape06 {
+  position: absolute;
+  left: 700px;
+  transition: all 0.5s ease-in-out;
+  animation: top-down6 13.5s infinite;
+}
+@keyframes top-down6 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-550px);
+  }
+}
+.shape07 {
+  position: absolute;
+  left: 840px;
+  transition: all 0.5s ease-in-out;
+  animation: top-down7 14s infinite;
+}
+@keyframes top-down7 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-250px);
+  }
+}
+.shape08 {
+  position: absolute;
+  left: 980px;
+  transition: all 0.5s ease-in-out;
+  animation: top-down8 14.5s infinite;
+}
+@keyframes top-down8 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-150px);
+  }
+}
+.shape09 {
+  position: absolute;
+  left: 1120px;
+  transition: all 0.5s ease-in-out;
+  animation: top-down09 15s infinite;
+}
+@keyframes top-down09 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-350px);
+  }
+}
+.shape10 {
+  position: absolute;
+  left: 1260px;
+  transition: all 0.5s ease-in-out;
+  animation: top-down10 15.5s infinite;
+}
+@keyframes top-down10 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-260px);
+  }
+}
+.shape11 {
+  position: absolute;
+  left: 1400px;
+  transition: all 0.5s ease-in-out;
+  animation: top-down11 16s infinite;
+}
+@keyframes top-down11 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-300px);
+  }
+}
+.shape12 {
+  position: absolute;
+  left: 1540px;
+  transition: all 0.5s ease-in-out;
+  animation: top-down12 16.5s infinite;
+}
+@keyframes top-down12 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-180px);
+  }
+}
+.shape13 {
+  position: absolute;
+  left: 1650px;
+  transition: all 0.5s ease-in-out;
+  animation: top-down13 17s infinite;
+}
+@keyframes top-down13 {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-250px);
+  }
+}
+/* person-detection */
+.person-detection {
+  position: absolute;
+  top: 230px;
+  right: 70px;
+  display: flex;
+}
+
+.person {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  margin: 0px 16px;
+}
+
+.person1 {
+  position: relative;
+  left: 28px;
+  bottom: 10px;
+}
+
+.person2 {
+  position: relative;
+  left: 12px;
+  bottom: 10px;
+}
+
+.person3 {
+  position: relative;
+  left: 8px;
+}
+
+.person5 {
+  position: relative;
+  right: 10px;
+  top: 4px;
+}
+
+.person6 {
+  position: relative;
+  right: 8px;
+  bottom: 15px;
+}
+
+.person8 {
+  position: relative;
+  top: 5px;
+  right: 2px;
+}
+
+.person9 {
+  position: relative;
+  top: 10px;
+  right: 2px;
+}
+
+.person:hover::before {
+  display: block;
+}
+
+.person:hover::after {
+  display: block;
+}
+
+.person1::before {
+  position: absolute;
+  z-index: 2;
+  content: " Hello,I am Saksham Choudhary  1Silver button holder Youtuber with 120k+Subs | Lead Cyber Security Expert at iNeuron";
+  text-align: center;
+  height: 150px;
+  width: 250px;
+  top: 70px;
+  left: -90px;
+  border-radius: 20px;
+  background-color: rgb(252, 255, 254);
+  display: none;
+}
+
+.person1::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  height: 50px;
+  width: 50px;
+  top: 70px;
+  left: 5px;
+  transform: rotate(45deg);
+  background-color: rgba(252, 255, 254, 0.89);
+  display: none;
+}
+
+.person2::before {
+  position: absolute;
+  z-index: 2;
+  content: "Hello, I am Navin Reddy Tech Educator, Certified Blockchain Developer, Youtuber : Telusko 1.7M+ Subscribers, Corporate Trainer";
+  text-align: center;
+  height: 150px;
+  width: 250px;
+  top: 70px;
+  left: -90px;
+  border-radius: 20px;
+  background-color: rgb(252, 255, 254);
+  display: none;
+}
+
+.person2::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  height: 50px;
+  width: 50px;
+  top: 68px;
+  left: 5px;
+  transform: rotate(45deg);
+  background-color: rgba(252, 255, 254, 0.89);
+  display: none;
+}
+
+.person3::before {
+  position: absolute;
+  z-index: 2;
+  content: "Hello, I am Amresh Bharti Youtuber (6.5 million subscribers) Founder of Mahatmaji Technical and We Make Creator";
+  height: 150px;
+  width: 250px;
+  text-align: center;
+  top: 75px;
+  left: -90px;
+  border-radius: 20px;
+  background-color: rgb(252, 255, 254);
+  display: none;
+}
+
+.person3::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  height: 50px;
+  width: 50px;
+  top: 75px;
+  left: 5px;
+  transform: rotate(45deg);
+  background-color: rgba(252, 255, 254, 0.89);
+  display: none;
+}
+
+.person4::before {
+  position: absolute;
+  z-index: 2;
+  content: "";
+  height: 150px;
+  width: 250px;
+  top: 70px;
+  left: 200px;
+  border-radius: 20px;
+  background-color: rgb(252, 255, 254);
+  display: none;
+}
+
+.person4::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  height: 50px;
+  width: 50px;
+  top: 65px;
+  left: 302px;
+  transform: rotate(45deg);
+  background-color: rgba(252, 255, 254, 0.89);
+  display: none;
+}
+
+.person5::before {
+  position: absolute;
+  z-index: 2;
+  top: 80px;
+  right: -90px;
+  content: " Hello, I am Sudhanshu Kumar Founder iNeuron , Chief AI Engineer & CEO at iNeuron.ai";
+  height: 150px;
+  width: 250px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(252, 255, 254);
+  display: none;
+}
+
+.person5::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  height: 50px;
+  width: 50px;
+  top: 78px;
+  left: 5px;
+  transform: rotate(45deg);
+  background-color: rgba(252, 255, 254, 0.89);
+  display: none;
+}
+
+.person6::before {
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+  right: -90px;
+  text-align: center;
+  content: "Hello, I am Krish Naik Tedx Speaker, Co Founder At iNeuron.ai,Youtuber With 580K+ Subscribers,Angel Investor";
+  height: 150px;
+  width: 250px;
+  border-radius: 20px;
+  background-color: rgb(252, 255, 254);
+  display: none;
+}
+
+.person6::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  height: 50px;
+  width: 50px;
+  top: 70px;
+  right: 5px;
+  transform: rotate(45deg);
+  background-color: rgba(252, 255, 254, 0.89);
+  display: none;
+}
+
+.person7::before {
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+  right: 100px;
+  content: "Hello, I am Saurabh (MySirG) Shukla Senior Vice President (Tech) at iNeuron, Educator and YouTuber";
+  height: 150px;
+  width: 250px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(252, 255, 254);
+  display: none;
+}
+
+.person7::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  height: 50px;
+  width: 50px;
+  top: 70px;
+  right: 202px;
+  transform: rotate(45deg);
+  background-color: rgba(252, 255, 254, 0.89);
+  display: none;
+}
+
+.person8::before {
+  position: absolute;
+  z-index: 2;
+  top: 80px;
+  right: -90px;
+  content: " Hello, I am Hitesh Choudhary Teacher and coder who is trying to solve some problems via iNeuron, Learnyst, Pensil and findcoder.";
+  height: 150px;
+  width: 250px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(252, 255, 254);
+  display: none;
+}
+
+.person8::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  height: 50px;
+  width: 50px;
+  top: 78px;
+  right: 5px;
+  transform: rotate(45deg);
+  background-color: rgba(252, 255, 254, 0.89);
+  display: none;
+}
+
+.person9::before {
+  position: absolute;
+  z-index: 2;
+  top: 80px;
+  right: -30px;
+  content: "Hello, I am Mukesh Otwani  Vice President (Test Automation) at INeuron.ai,YouTuber (143K), Ex-SAP, Ex-Dell, Mentor ";
+  height: 150px;
+  width: 250px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(252, 255, 254);
+  display: none;
+}
+
+.person9::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  height: 50px;
+  width: 50px;
+  top: 75px;
+  right: 5px;
+  transform: rotate(45deg);
+  background-color: rgba(252, 255, 254, 0.89);
+  display: none;
+}
+
+/* Hard work */
+.hardwork-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 925px;
+}
+.heading {
+  position: absolute;
+  z-index: 1;
+  color: rgb(70, 70, 70);
+  top: 900px;
+  text-align: center;
+  font-size: 46px;
+  font-family: Poppins;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.color-text {
+  color: rgba(147, 64, 235, 0.482);
+}
+.under-line {
+  position: absolute;
+  top: 980px;
+  width: 180px;
+  border: 2px solid rgb(70, 70, 70);
+}
+/* hardwork card */
+.box {
+  position: relative;
+  top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+img {
+  height: 60px;
+}
+
+.block-chain {
+  height: 100px;
+}
+
+.img-container {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.course {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #78cf85;
+  width: 400px;
+  height: 550px;
+}
+
+.inner-course {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 80px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.course::before {
+  position: absolute;
+  top: 120px;
+  z-index: 2;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/software-development-programming-language-coding-digital-technology-3d-isometric-laptop-computer-with-web-application-isolated-on-white-background-design-vector.jpg");
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.course-text1 {
+  position: absolute;
+  color: #fff;
+  bottom: 75px;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: Poppins;
+  text-align: center;
+}
+
+.course-text2 {
+  position: relative;
+  color: rgba(69, 68, 69, 0.91);
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Poppins;
+  text-align: center;
+}
+
+.enrolled {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8685d9;
+  height: 550px;
+  width: 400px;
+}
+
+.enrolled::before {
+  position: absolute;
+  top: 120px;
+  z-index: 2;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/programming-courses-web-design-concept-with-people-vector.jpg");
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.transition {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d76363;
+  height: 550px;
+  width: 400px;
+  animation: rotate 20s infinite;
+}
+
+.transition::before {
+  position: absolute;
+  top: 120px;
+  z-index: 2;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/female-developer-vector.jpg");
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.img1 {
+  position: absolute;
+  animation: left_move 30s infinite;
+}
+
+@keyframes left_move {
+  0% {
+    transform: translate(-40px, 0px) scale(0.1);
+  }
+
+  55% {
+    transform: translate(-140px, 0px) scale(1);
+  }
+
+  60%,
+  65%,
+  70%,
+  75%,
+  80%,
+  85%,
+  90%,
+  95% {
+    transform: translate(-140px, 0px);
+  }
+}
+
+.img2 {
+  position: absolute;
+  animation: right_move 30s infinite;
+}
+
+@keyframes right_move {
+  0% {
+    transform: translate(40px, 0px) scale(0.1);
+  }
+
+  55% {
+    transform: translate(140px, 0px) scale(1);
+  }
+
+  60%,
+  65%,
+  70%,
+  75%,
+  80%,
+  85%,
+  90%,
+  95% {
+    transform: translate(140px, 0px);
+  }
+}
+
+.img3 {
+  position: absolute;
+  animation: top_move 30s infinite;
+}
+
+@keyframes top_move {
+  0% {
+    transform: translate(00px, -40px) scale(0.1);
+  }
+
+  55% {
+    transform: translate(0px, -140px) scale(1);
+  }
+
+  60%,
+  65%,
+  70%,
+  75%,
+  80%,
+  85%,
+  90%,
+  95% {
+    transform: translate(0px, -140px);
+  }
+}
+
+.img4 {
+  position: absolute;
+  animation: bottom_move 30s infinite;
+}
+
+@keyframes bottom_move {
+  0% {
+    transform: translate(00px, 40px) scale(0.1);
+  }
+
+  55% {
+    transform: translate(0px, 140px) scale(1);
+  }
+
+  60%,
+  65%,
+  70%,
+  75%,
+  80%,
+  85%,
+  90%,
+  95% {
+    transform: translate(0px, 140px);
+  }
+}
+
+.img5 {
+  position: absolute;
+  animation: leftcross_move 30s infinite;
+}
+
+@keyframes leftcross_move {
+  0% {
+    transform: translate(30px, 30px) scale(0.1);
+  }
+
+  55% {
+    transform: translate(100px, 100px) scale(1);
+  }
+
+  65%,
+  70%,
+  75%,
+  80%,
+  85%,
+  90%,
+  95% {
+    transform: translate(100px, 100px);
+  }
+}
+
+.img6 {
+  position: absolute;
+  animation: rightcross_move 30s infinite;
+}
+
+@keyframes rightcross_move {
+  0% {
+    transform: translate(-30px, -30px) scale(0.1);
+  }
+
+  55% {
+    transform: translate(-100px, -100px) scale(1);
+  }
+
+  65%,
+  70%,
+  75%,
+  80%,
+  85%,
+  90%,
+  95% {
+    transform: translate(-100px, -100px);
+  }
+}
+
+.img7 {
+  position: absolute;
+  animation: topcross_move 30s infinite;
+  transition-delay: 10s;
+}
+
+@keyframes topcross_move {
+  0% {
+    transform: translate(-30px, 30px) scale(0.1);
+  }
+
+  55% {
+    transform: translate(-100px, 100px) scale(1);
+  }
+
+  65%,
+  70%,
+  75%,
+  80%,
+  85%,
+  90%,
+  95% {
+    transform: translate(-100px, 100px);
+  }
+}
+
+.img8 {
+  position: absolute;
+  animation: bottomcross_move 30s infinite;
+}
+
+@keyframes bottomcross_move {
+  0% {
+    transform: translate(30px, -30px) scale(0.1);
+  }
+
+  55% {
+    transform: translate(100px, -100px) scale(1);
+  }
+
+  65%,
+  70%,
+  75%,
+  80%,
+  85%,
+  90%,
+  95% {
+    transform: translate(100px, -100px);
+  }
+}
+
+.box {
+  margin: 210px 80px;
+  border-radius: 20px;
+}
+/* Achivers */
+.Achiver-Section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow: hidden;
+  height: 500px;
+  width: 100%;
+  background-color: #9dfdab;
+}
+
+.Achiever {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
+
+  animation: scroll 0s linear infinite;
+  height: 240px;
+  width: 1520px;
+}
+.Achiever-text {
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scroll 30s linear infinite;
+}
+.slider1 {
+  position: relative;
+  left: 990px;
+}
+.slider2 {
+  position: relative;
+  left: 990px;
+}
+.slider .slide {
+  position: relative;
+  margin: 0px 20px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(-350px);
+  }
+
+  100% {
+    transform: translateX(-1550px);
+  }
+}
+.slide img {
+  position: relative;
+  height: 40px;
+}
+.text-style02 {
+  color: #4c4e4d;
+}
+
+/* Hall_of-Fame */
+
+.Hall-of-fame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 850px;
+  overflow: hidden;
+}
+.Hall-of-fame-text {
+  position: relative;
+  top: 60px;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 600;
+  color: #777;
+}
+.Hall-of-fame-cards {
+  position: relative;
+  top: 120px;
+  display: flex;
+}
+.Hall-of-fame-card {
+  position: relative;
+  margin: 0px 50px;
+  display: flex;
+  font-family: Poppins;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 450px;
+  width: 400px;
+  background-color: #c4c0be;
+  border-radius: 20px;
+  border: 5px solid #ecd14a;
+  box-shadow: rgba(0, 0, 0, 0.15) 20px 20px 2.6px;
+}
+
+.people-img {
+  position: relative;
+  top: 40px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+.Hall-of-fame-card h1 {
+  position: relative;
+  top: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.position {
+  position: relative;
+  top: 55px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.self-intro {
+  position: relative;
+  top: 65px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.linkedin-icon {
+  position: relative;
+  top: 100px;
+
+  height: 50px;
+}
+.Hall-of-fame-button {
+  position: relative;
+  top: 240px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 600;
+  border-radius: 10px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  background-color: #555553;
+  border: 2px solid #f2691a;
+}
+.Hall-of-fame-button:hover {
+  background-color: #f2691a;
+  border-radius: 25px;
+}
+.squre-container1 {
+  display: flex;
+  position: relative;
+  z-index: -1;
+  bottom: 470px;
+}
+.squre-container2 {
+  display: flex;
+  position: relative;
+  z-index: -1;
+}
+.squre {
+  position: relative;
+  height: 80px;
+  width: 50px;
+  margin: 0px 75px;
+  transition: all 0.5s ease-in-out;
+  animation: fameColor1 20s linear infinite;
+}
+.squre1 {
+  position: relative;
+  bottom: 15px;
+  animation: fameColor2 20s linear infinite;
+}
+.squre2 {
+  position: relative;
+  top: 30px;
+  animation: fameColor2 20s linear infinite;
+}
+.squre3 {
+  position: relative;
+  bottom: 90px;
+}
+.squre5 {
+  position: relative;
+  bottom: 120px;
+  animation: fameColor2 20s linear infinite;
+}
+.squre6 {
+  position: relative;
+  top: 10px;
+}
+.squre7 {
+  position: relative;
+  bottom: 80px;
+  animation: fameColor2 20s linear infinite;
+}
+.squre10 {
+  position: relative;
+  bottom: 250px;
+  left: 10px;
+}
+.squre11 {
+  position: relative;
+  top: 50px;
+  right: 10px;
+  animation: fameColor2 20s linear infinite;
+}
+.squre13 {
+  position: relative;
+  top: 70px;
+  right: 10px;
+  animation: fameColor2 20s linear infinite;
+}
+.squre14 {
+  position: relative;
+  bottom: 70px;
+  right: 10px;
+  animation: fameColor2 20s linear infinite;
+}
+.squre16 {
+  position: relative;
+  top: 70px;
+  left: 20px;
+}
+.squre17 {
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  animation: fameColor2 20s linear infinite;
+}
+.squre18 {
+  position: relative;
+  bottom: 220px;
+  left: 20px;
+  animation: fameColor2 20s infinite;
+}
+.slide img {
+  position: relative;
+  height: 40px;
+}
+.text-style02 {
+  color: #74df94;
+}
+
+@keyframes fameColor1 {
+  0% {
+    border: 2px solid #f2691a;
+  }
+  100% {
+    border: 7px solid #fbd92e;
+  }
+}
+@keyframes fameColor2 {
+  0% {
+    border: 5px solid #fbd92e;
+  }
+  100% {
+    border: 2px solid #f2691a;
+  }
+}
+
+/* Learning Section */
+.learning-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(239, 235, 235);
+  height: 900px;
+}
+
+.learning-section-heading {
+  position: relative;
+  bottom: 60px;
+  font-size: 55px;
+  font-weight: 500;
+}
+
+.learning-section-btn {
+  position: relative;
+  bottom: 30px;
+  margin: 0px 20px;
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: 2px solid #df7474;
+  background-color: #fff;
+  color: #df7474;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.learning-section-btn01 {
+  transition: all 0.5s ease-in-out;
+  background-color: #df7474;
+  font-weight: 500;
+  color: #fff;
+}
+
+.learning-section-btn01:hover {
+  color: #df7474;
+  background-color: #fff;
+}
+
+.learning-section-btn-same {
+  transition: all 0.5s ease-in-out;
+}
+
+.learning-section-btn-same:hover {
+  color: #fff;
+  background-color: #df7474;
+}
+
+.learning-section-heading2 {
+  position: relative;
+  bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.learning-section-para {
+  position: relative;
+  font-size: 20px;
+}
+
+.learning-cards-section {
+  position: relative;
+  top: 40px;
+  display: flex;
+}
+
+.learning-card-section {
+  position: relative;
+  margin: 0px 50px;
+  height: 450px;
+  width: 409px;
+  background-color: #a2ce3d;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 20px 20px 2.6px;
+}
+
+.learning-card-section2 {
+  background-color: #7c5df0;
+}
+
+.learning-card-section3 {
+  background-color: #4eb2ff;
+}
+
+.course-img {
+  height: 230px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.learning-section-course-name {
+  position: relative;
+  left: 20px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.mantor {
+  position: relative;
+  top: 10px;
+  left: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.learning-section-price-livebtn {
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-course {
+  position: relative;
+  left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.learning-section-live-btn {
+  position: relative;
+  right: 20px;
+  font-size: 18px;
+  background-color: #e9e5e5;
+  border: none;
+  padding: 6px 15px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.learning-section-live-btn:hover {
+  color: rgb(60, 58, 58);
+  border-radius: 20px;
+}
+
+.learning-veiw-btn {
+  position: relative;
+  top: 80px;
+  font-size: 18px;
+  background-color: #e67f7f;
+  border: none;
+  padding: 6px 15px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
+
+.learning-veiw-btn:hover {
+  color: rgb(60, 58, 58);
+  border-radius: 20px;
+}
+
+/* Hackthon-Companies-Section */
+.Hackthon-Companies-Section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+  background-color: #7777771a;
+}
+
+.Companies-slider {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
+  height: 240px;
+  width: 1520px;
+}
+
+.Hackthon-Companies-text {
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 500;
+  color: #777;
+}
+
+.Companies-slide {
+  position: relative;
+  left: 250px;
+  margin: 0px 20px;
+  animation: Companies-slider-scroll 10s infinite;
+}
+
+.Companies-slide img {
+  position: relative;
+  height: 60px;
+}
+
+@keyframes Companies-slider-scroll {
+  10% {
+    transform: translateX(-250px);
+  }
+
+  20% {
+    transform: translateX(-350px);
+  }
+
+  30% {
+    transform: translateX(-450px);
+  }
+}
+/* Our-Product-Section */
+
+.Our-Product-Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 980px;
+  background-color: rgb(147, 84, 84);
+}
+
+.Our-Product-Section-text {
+  position: relative;
+  top: 50px;
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.our-product-cards {
+  position: relative;
+  display: flex;
+}
+
+.our-product-card {
+  position: relative;
+  top: 80px;
+  margin: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 350px;
+  width: 320px;
+  transition: all 2s ease-in-out;
+}
+
+.our-product-cards1 {
+  position: relative;
+  top: 30px;
+}
+
+.our-product-cards2 {
+  position: relative;
+  top: 120px;
+}
+
+.our-product-card h1 {
+  position: relative;
+  top: 20px;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.our-product-card p {
+  position: relative;
+  top: 30px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.our-product-card img {
+  position: relative;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 1px solid rgb(79, 78, 78);
+}
+
+.our-product-card:hover {
+  background-color: rgba(255, 255, 255, 0.393);
+  border-radius: 10px;
+}
+/* Avengers */
+.Tech-Avengers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(226, 225, 225);
+}
+
+.Tech-Avengers-heading {
+  position: relative;
+  top: 150px;
+  font-size: 60px;
+  font-family: Poppins;
+}
+
+.style-avenger {
+  color: #d03e2f;
+}
+
+.Avenger-Slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+
+  height: 600px;
+}
+
+.Avenger-Slider1 {
+  position: relative;
+  top: 150px;
+}
+
+.Avenger-Slider3 {
+  position: relative;
+  bottom: 150px;
+}
+
+.Avenger-Slide {
+  position: relative;
+  margin: 0px 50px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 300px;
+  font-family: Poppins;
+  background-color: darkgrey;
+  border-radius: 20px;
+}
+
+.Avenger-Slide h1 {
+  position: relative;
+  bottom: 70px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.Avenger-Slide h2 {
+  position: relative;
+  bottom: 70px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.Avenger-team {
+  position: relative;
+  bottom: 80px;
+  height: 130px;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+.Avenger-Slide1 {
+  background-color: #fc8536;
+}
+
+.Avenger-Slide2 {
+  background-color: #37373c;
+}
+
+.Avenger-Slide3 {
+  background-color: #42beb4;
+}
+
+.Avenger-Slide4 {
+  background-color: #e165dd;
+}
+
+.Avenger-Slide5 {
+  background-color: #525253;
+}
+
+.Avenger-Slide6 {
+  background-color: #51b6f0;
+}
+
+.Avenger-Slide7 {
+  background-color: #d03e2f;
+}
+
+.Avenger-Slide8 {
+  background-color: #f3a602;
+}
+
+.Avenger-Slide9 {
+  background-color: #249b91;
+}
+
+.Avenger-Slide10 {
+  background-color: #9169ab;
+}
+
+.Avenger-Slide11 {
+  background-color: #948b58;
+}
+
+.doctor {
+  position: relative;
+  right: 160px;
+  height: 200px;
+  animation: up-down 6s infinite;
+}
+
+.Batman {
+  position: relative;
+  right: 160px;
+  height: 200px;
+  animation: up-down 6s infinite;
+}
+
+.iron-man {
+  position: relative;
+  right: 160px;
+  height: 200px;
+  transition: all 0.5s ease-in-out;
+  animation: up-down 6s infinite;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(0px);
+  }
+
+  25% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.linkedin-logo {
+  position: relative;
+  left: 40px;
+  bottom: 80px;
+  height: 28px;
+}
+
+.youtube-logo {
+  position: relative;
+  left: 20px;
+  bottom: 55px;
+  height: 80px;
+}
+
+/* Institutions  */
+
+.Institutions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.Institutions-heading {
+  font-family: Poppins;
+  font-size: 55px;
+}
+
+.Institution {
+  position: relative;
+  top: 60px;
+}
+
+.Institutions img {
+  height: 250px;
+}
+/* footer */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-color: rgb(88, 88, 88);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.footer-icon {
+  position: relative;
+  top: 100px;
+
+  left: 65px;
+  margin: 0px 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.footer-icon1 {
+  color: #0c87cb;
+}
+
+.footer-icon2 {
+  color: #0c87cb;
+}
+
+.footer-icon3 {
+  color: #0c87cb;
+}
+
+.footer-icon4 {
+  color: rgb(242, 90, 76);
+}
+
+.footer-para {
+  position: relative;
+  margin: 20px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.footer-para:hover {
+  color: #808080;
+}
+
+.office-add-sec {
+  display: flex;
+}
+
+.office-add-sec i {
+  position: relative;
+  top: 2px;
+  left: -30px;
+}
+
+.email-sec i {
+  position: relative;
+  top: 23px;
+  left: -30px;
+}
+
+.office-add {
+  position: relative;
+  right: 12px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.email-add {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer-heading-add {
+  position: relative;
+  bottom: 38px;
+}
+
+.Product {
+  position: relative;
+  top: 25px;
+}
+
+.info {
+  position: relative;
+}
