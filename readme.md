@@ -12,4 +12,4 @@
 
 ![Dashboard](img/dashboard3.png)
 
-Link : [iNeuron Dashboard](link)
+Link : [iNeuron Dashboard](https://taupe-cajeta-561576.netlify.app/)
