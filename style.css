@@ -1537,12 +1537,16 @@ img {
   color: rgb(255, 255, 255);
 }
 
-.mantor {
+.mentor {
   position: relative;
   top: 10px;
   left: 20px;
   font-size: 18px;
   font-weight: 400;
+}
+.mentor2 {
+  position: relative;
+  top: 35px;
 }
 
 .learning-section-price-livebtn {
@@ -1575,7 +1579,10 @@ img {
   color: rgb(60, 58, 58);
   border-radius: 20px;
 }
-
+.manual-position {
+  position: relative;
+  top: 50px;
+}
 .learning-veiw-btn {
   position: relative;
   top: 80px;
